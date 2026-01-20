@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - cluster-contexts/
+  - repositories/
+  - packagevariants/baseline/
+  - packagevariants/addons/
+  - packagevariants/networking/
