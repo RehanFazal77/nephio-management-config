@@ -1,0 +1,14 @@
+apiVersion: config.porch.kpt.dev/v1alpha1
+kind: Repository
+metadata:
+  name: nephio-blueprints
+  namespace: default
+spec:
+  description: Nephio blueprint packages
+  type: git
+  content: Package
+  deployment: false
+  git:
+    repo: https://github.com/rehanfazal77/nephio-blueprints.git
+    branch: main
+    directory: /

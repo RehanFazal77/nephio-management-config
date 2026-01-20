@@ -1,0 +1,14 @@
+apiVersion: config.porch.kpt.dev/v1alpha1
+kind: Repository
+metadata:
+  name: nephio-my-ran
+  namespace: default
+spec:
+  description: Deployment packages for my-ran
+  type: git
+  content: Package
+  deployment: true
+  git:
+    repo: https://github.com/rehanfazal77/nephio-my-ran.git
+    branch: main
+    directory: /

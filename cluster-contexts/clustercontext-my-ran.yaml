@@ -1,0 +1,15 @@
+apiVersion: infra.nephio.org/v1alpha1
+kind: ClusterContext
+metadata:
+  name: my-ran
+  namespace: default
+  labels:
+    nephio.org/cluster-type: workload
+    nephio.org/workload-type: ran
+spec:
+  clusterName: my-ran
+  siteCode: site-ran-01
+  cnis:
+    - calico
+    - macvlan
+  provider: baremetal

@@ -1,0 +1,15 @@
+apiVersion: infra.nephio.org/v1alpha1
+kind: ClusterContext
+metadata:
+  name: my-core
+  namespace: default
+  labels:
+    nephio.org/cluster-type: workload
+    nephio.org/workload-type: core
+spec:
+  clusterName: my-core
+  siteCode: site-core-01
+  cnis:
+    - calico
+    - macvlan
+  provider: baremetal
